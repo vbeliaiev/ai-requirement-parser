@@ -19,7 +19,7 @@ def main():
 
     print(json.dumps(result, indent=2, ensure_ascii=False))
   except APIConnectionError:
-    print("No connection error")
+    print("Connection error")
   except RateLimitError:
     print("Limit is exceed")
   except APIError as e:
